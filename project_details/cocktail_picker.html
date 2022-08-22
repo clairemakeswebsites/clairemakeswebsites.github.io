@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+<!--    <link rel="stylesheet" type="text/css" href="./styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+<script src="https://kit.fontawesome.com/13e90f422c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">   
+    <script src="../index.js" defer></script>
+    <title>Cocktail Picker</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="nav-display">
+        <a href="index.html"><img src="../images/icon_white.png" alt="home icon" class="icon" /></a>
+      </div>
+       <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+          <li class="nav-list-item"><a href="../index.html"><i class="fa-solid fa-house nav-icon"></i><span class="nav-link">Home</span></a></li> 
+          <li class="nav-list-item"><a href="../index.html#project"><i class="fa-solid fa-clipboard-list nav-icon"></i><span class="nav-link">Projects</span></a></li>
+          <li class="nav-list-item"><a href="#contact"><i class="fa-regular fa-address-card nav-icon"></i><span class="nav-link">Contact</span></a></li>
+          <li class="nav-list-item"><a href="../resume.html"><i class="fa-solid fa-file-code nav-icon"></i><span class="nav-link">Resume</span></a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="descripion-section">
+      <h1 class="description-title">Cocktail Picker</h1>
+      <a href="https://my-react-project-cocktails.netlify.app/" target="_blank" class="pointer"><img src="../images/cocktail-01.png" alt="ParkBench homepage" class="description-image"></a>
+      <p class="description-para">Cocktail picker web application built using React and Create React App. Used <a href=”https://github.com/john-smilga/react-projects”>starter code</a> to begin the project and the <a href=”https://www.thecocktaildb.com/”>Cocktail DB API</a> to fetch cocktail information. Then connected the site to a <a href=”https://github.com/clairemanthey/react_project”> github repository</a> for continuous development.</p>
+      <br>
+      <p class="description-para">Used React-Router-Dom to manage different pages making it easy for the user to find the information they are looking to find. Added a search function to the app so the user can search for a specific cocktail. Implemented a loading component while waiting for the cocktail information to be fetched from the API and displayed on the webpage.
+</p>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+      <h2 class="heading-two">Let's work together...</h2>
+      <p>How do you take your coffee?</p>
+      <div class="contact-links">
+        <div class="profile-link">
+          <a href="../resume.html">
+            <i class="fa-solid fa-file-code"></i>
+            <p>Resume</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://github.com/clairemanthey" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <p>Github</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://twitter.com/claire_makes" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+            <p>Twitter</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://codepen.io/aglaea" target="_blank">
+            <i class="fa-brands fa-codepen"></i>
+            <p>codepen</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://www.linkedin.com/in/claire-manthey-4389a622/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="mailto:clairemakes@gmail.com" target="_blank">
+            <i class="fa-solid fa-at"></i>
+          </a>
+          <div class="email-container">
+            <p class="email" id="email" class="email"></p>
+            <button id="copy" class="copy-btn"><i class="far fa-copy fa-xl"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p></p>
+      <p>© Claire Manthey </p>
+    </footer>
+  </body>
+</html>
+
+<!--  -->

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+<!--    <link rel="stylesheet" type="text/css" href="./styles.css" /> -->
+    <link rel="stylesheet" type="text/css" href="../styles.css" />
+<script src="https://kit.fontawesome.com/13e90f422c.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Raleway:700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:200i,300,400&amp;display=swap" rel="stylesheet">   
+    <script src="../index.js" defer></script>
+    <title>Photographer Site</title>
+  </head>
+  <body>
+    <header class="primary-header">
+      <div class="nav-display">
+        <a href="index.html"><img src="../images/icon_white.png" alt="home icon" class="icon" /></a>
+      </div>
+       <nav>
+        <ul id="primary-navigation" data-visible="false" class="primary-navigation">
+          <li class="nav-list-item"><a href="../index.html"><i class="fa-solid fa-house nav-icon"></i><span class="nav-link">Home</span></a></li> 
+          <li class="nav-list-item"><a href="../index.html#project"><i class="fa-solid fa-clipboard-list nav-icon"></i><span class="nav-link">Projects</span></a></li>
+          <li class="nav-list-item"><a href="#contact"><i class="fa-regular fa-address-card nav-icon"></i><span class="nav-link">Contact</span></a></li>
+          <li class="nav-list-item"><a href="../resume.html"><i class="fa-solid fa-file-code nav-icon"></i><span class="nav-link">Resume</span></a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="descripion-section">
+      <h1 class="description-title">Photographer Biography</h1>
+      <a href="https://anna-atkins-biography.github.io/index.html" target="_blank0" class="pointer"><img src="../images/artist-biography-01.png" alt="Artist Biography" class="description-image"></a>
+      <p class="description-para">This project was part of an assignment for a web design class and it was to choose an artist and create a website with their background and showcase art. The site had to be hand coded, responsive, had to have at least 3 web pages linked together with the use of a menu, embed at least one video, include headings, and paragraphes using semantic HTML, and had to implement design principles to look aesthetically pleasing. For this project I chose the photographer, Anna Atkins I started the design process using figma to create a <a href=”https://www.figma.com/file/qvdHGJSBukcWuZ3br7kDNB/Anna-Atkins-Site?node-id=37%3A128”>layout</a> for each screen size. </p>
+      <br>
+      <p class="description-para">For the menu, I used a responsively designed navigation bar with javascript and css media queries. On mobile screen sizes the navigation is a slide out menu, that then becomes a navigation bar at the top of each webpage at tablet screen size and larger. Then used Javascript to create an image carousel showcasing her two books, <i><a href="https://www.getty.edu/art/collection/object/1040C0" target="_blank" >British and Foreign Ferns</i>, and <i><a href="https://www.metmuseum.org/art/collection/search/286656" target="_blank" >British Algae</i> with captions for each image.</p>
+
+    </section>
+
+
+    <section class="contact" id="contact">
+      <h2 class="heading-two">Let's work together...</h2>
+      <p>How do you take your coffee?</p>
+      <div class="contact-links">
+        <div class="profile-link">
+          <a href="../resume.html">
+            <i class="fa-solid fa-file-code"></i>
+            <p>Resume</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://github.com/clairemanthey" target="_blank">
+            <i class="fa-brands fa-github"></i>
+            <p>Github</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://twitter.com/claire_makes" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+            <p>Twitter</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://codepen.io/aglaea" target="_blank">
+            <i class="fa-brands fa-codepen"></i>
+            <p>codepen</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="https://www.linkedin.com/in/claire-manthey-4389a622/" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+            <p>LinkedIn</p>
+          </a>
+        </div>
+        <div class="profile-link">
+          <a href="mailto:clairemakes@gmail.com" target="_blank">
+            <i class="fa-solid fa-at"></i>
+          </a>
+          <div class="email-container">
+            <p class="email" id="email" class="email"></p>
+            <button id="copy" class="copy-btn"><i class="far fa-copy fa-xl"></i></button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <p></p>
+      <p>© Claire Manthey </p>
+    </footer>
+  </body>
+</html>
+
+<!--  -->
