@@ -584,6 +584,16 @@ h1, h2{
     align-items: center;
   }
 
+  .contact-links{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .profile-link{
+    padding-inline: 10px;
+  }
+
 
 }
 
