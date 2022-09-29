@@ -3,6 +3,7 @@
   --main-violet: #1D0827;
   --main-background: #FBF7FD;
 
+  /*--Font Size--*/
   --fs-900: 3.5rem;
   --fs-800: 3rem;
   --fs-700: 2.5rem;
@@ -15,6 +16,10 @@
 }
 
 
+html{
+  overflow-x: hidden;
+}
+
 *, ::before, ::after{
   box-sizing: border-box;
   margin: 0;
@@ -22,6 +27,7 @@
   line-height: 1.2;
 }
 
+/*--utility classes--*/
 .pointer{
   cursor: pointer;
 }
@@ -42,6 +48,8 @@
   /* added line */
   border: 0;
 }
+
+/*--Custom Styles--*/
 
 body{
   font-family: "Poppins", sans-serif;
@@ -102,52 +110,6 @@ h1, h2{
   display: none;
 }
 
-@media only screen and (min-width: 600px){
-  .nav-icon{
-    font-size: 3rem;
-    margin-inline: 2rem;
-  }
-
-}
-
-@media only screen and (min-width: 768px){
-  .primary-navigation{
-    justify-content: flex-end;
-    margin-right: 15px;
-  }
-  .nav-icon{
-    font-size: var(--fs-600);
-    margin: 0 7px 0 15px;
-  }
-  .nav-link{
-    display: inline-block;
-    font-size: var(--fs-600);
-    letter-spacing: -3px;
-  }
-  .nav-list-item{
-    display: flex;
-    flex-direction: row;
-  }
-}
-
-@media only screen and (min-width: 992px){
-  .primary-navigation{
-    flex-direction: row;
-    justify-content: flex-end;
-  }
-  .nav-list-item{
-    margin: 0 15px;
-  }
-  .nav-icon{
-    font-size: var(--fs-500);
-    margin-right: 10px;
-  }
-  .nav-link{
-    display: inline-block;
-    font-size: var(--fs-500);
-    letter-spacing: 1px;
-  }
-}
 
 /* Home Page */
 #welcome{
@@ -193,26 +155,6 @@ h1, h2{
   padding-inline: 5px;
 }
 
-@media only screen and (min-width: 992px){
-  .skills-container{
-    flex-direction: row;
-    align-items: flex-start;
-  }
-
-  .skills-item{
-    padding-inline: 5px;
-    width: 1250px;
-  }
-
-  .skills-heading{
-    font-size: var(--fs-400);
-  }
-
-  .skills-para{
-    padding: 0 0 0 5px;
-    font-size: var(--fs-300);
-  }
-}
 
 
 .projects-main-title{
@@ -264,11 +206,6 @@ h1, h2{
   margin: 0 150px 0 0;
 }
 
-@media only screen and (max-width: 600px){
-  .card{
-    width:  100%;
-  }
-}
 
 .project-image{
   width: 100%;
@@ -320,16 +257,15 @@ h1, h2{
 
 .contact-links{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  width: 100%;
+  flex-direction: column;
+  align-items: center;
   max-width: 980px;
   margin: 4rem 0 0 0;
   flex-wrap: wrap;
 }
 
 .profile-link{
-  padding-inline: 0.5rem;
+  padding: 10px 0;
 }
 
 .profile-link:hover{
@@ -368,16 +304,11 @@ h1, h2{
   cursor: pointer;
   font-size: var(--fs-400);
   font-weight: bold;
-}
-
-@media only screen and (max-width: 768px){
-  .contact-links{
-    flex-direction: column;
-    align-items: center;
-  }
+  padding-left: 2px;
 }
 
 
+*/
 /*-----Project Page Styling------*/
 .projects-container{
   width:  100%;
@@ -437,7 +368,7 @@ h1, h2{
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 50px 50px 0;
+  margin: 50px 25px 0;
   padding: 0 0 3rem 0;
 }
 
@@ -465,6 +396,7 @@ h1, h2{
 .contact-item{
   font-size: var(--fs-400);
   padding: 3px 0;
+  letter-spacing: -1px;
 }
 
 .contact-icon{
@@ -491,6 +423,7 @@ h1, h2{
 .skill-item{
   list-style-type: none;
   line-height: 1;
+  letter-spacing: -1px;
 }
 
 .resume-list-item{
@@ -502,15 +435,21 @@ h1, h2{
 
 .self-description{
   font-size: var(--fs-300);
+  padding-inline: 15px;
 }
   
 .job-title{
   font-size: var(--fs-400);
   font-weight: 500;
+  padding: 7px 0;
 }
 
 .section-education{
   margin: 50px 0 0 0;
+}
+
+.education-info{
+  margin: 0 0 15px 0;
 }
 
 .education-heading{
@@ -536,18 +475,139 @@ h1, h2{
 }
 
 .skills-list{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding: 0 10px;
 }
 
 .resume-heading-3{
   text-align: center;
+  padding: 0 0 25px 0;
+}
+
+.section-experience{
+  margin: 0 0 0 40px;
+  display: flex;
+  flex-direction: column;
 }
 
 
+
+/* Project Descriptions */
+
+.descripion-section{
+  padding-top: 150px;
+  padding-inline: 50px;
+}
+
+.description-title{
+  font-size: var(--fs-900);
+  font-weight: 300;
+}
+
+.description-image{
+  display: block;
+  margin: 45px auto;
+  width: 35%;
+  border: 1px solid var(--main-violet);
+}
+
+.description-para{
+  font-size:  var(--fs-400);
+  font-weight: 300;
+  line-height: 1.2;
+}
+
+@media only screen and (max-width: 600px){
+  .card{
+    width:  100%;
+  }
+}
+
+
+@media only screen and (min-width: 600px){
+  .nav-icon{
+    font-size: 3rem;
+    margin-inline: 2rem;
+  }
+
+}
+
+@media only screen and (min-width: 768px){
+  body{
+    width: 100%;
+  }
+
+  .primary-header{
+    width: 100vw;
+  }
+
+  .resume{
+    margin-inline: 25px;
+  }
+
+  .primary-navigation{
+    justify-content: flex-end;
+    margin-right: 15px;
+  }
+
+  .nav-icon{
+    font-size: var(--fs-600);
+    margin: 0 7px 0 15px;
+  }
+  
+  .nav-link{
+    display: inline-block;
+    font-size: var(--fs-600);
+    letter-spacing: -3px;
+  }
+  
+  .nav-list-item{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .resume-list{
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .skills-list{
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .skill-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+
+}
+
 @media only screen and (min-width: 992px){
+  .primary-navigation{
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .nav-list-item{
+    margin: 0 15px;
+  }
+  
+  .nav-icon{
+    font-size: var(--fs-500);
+    margin-right: 10px;
+  }
+  
+  .nav-link{
+    display: inline-block;
+    font-size: var(--fs-500);
+    letter-spacing: 1px;
+  }
+  
   .resume{
     display: grid;
     grid-template-areas: 
@@ -579,13 +639,14 @@ h1, h2{
 
   .resume-section{
     padding: 0 10px 0px 10px;
+
   }
   
   .section-info{
     grid-area:  info;
   }
 
-  .resume-subheading{
+  .subheading{
   }
 
   .contact-info{
@@ -608,22 +669,55 @@ h1, h2{
     font-weight: 400;
     padding: 15px 0 0 0;
   }
+
   .resume-list{
     list-style-type: circle;
     list-style-position: outside;
     padding: 0 0 15px 0;
   }
 
+  .skills-container{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .skills-para{
+    padding: 0 0 0 5px;
+    font-size: var(--fs-300);
+  }
+
+  .resume-skills{
+    margin: 0 auto;
+  }
+  
+  .skills-heading{
+    font-size: var(--fs-400);
+  }
+
+  .skills-list{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding-top: 10px;
+
+  }
+
   .skill-item{
     list-style-type: none;
     line-height: 1;
     font-size: var(--fs-200);
-    font-weight: 700;
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+
   }
 
   .resume-list-item{
     font-size:  var(--fs-300);
     line-height:  1.7; 
+  }
+
+  i{
+    padding-right: 5px;
   }
   
   .self-description{
@@ -637,10 +731,12 @@ h1, h2{
   .job-title{
     font-size: var(--fs-400);
     font-weight: 400;
-}
+  }
 
   .section-education{
     grid-area: education;
+    margin: 0;
+    padding-top: 10px;
   }
 
   .resume-heading-4{
@@ -652,33 +748,8 @@ h1, h2{
     padding: 0 0 0 15px;
   }
 
+  .education-heading{
+    padding-bottom: 15px;
+  }
+
 }
-
-/* Project Descriptions */
-
-.descripion-section{
-  padding-top: 150px;
-  padding-inline: 50px;
-}
-
-.description-title{
-  font-size: var(--fs-900);
-  font-weight: 300;
-}
-
-.description-image{
-  display: block;
-  margin: 45px auto;
-  width: 35%;
-  border: 1px solid var(--main-violet);
-}
-
-.description-para{
-  font-size:  var(--fs-400);
-  font-weight: 300;
-  line-height: 1.2;
-}
-
-
-
-
