@@ -79,6 +79,11 @@ h1, h2{
   text-align: center;
 }
 
+.section{
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
 /*  Navivation */
 .primary-header{
   background-color: var(--main-violet);

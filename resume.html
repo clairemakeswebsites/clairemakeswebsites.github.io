@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"><link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,500;0,600;0,700;0,800;0,900;1,100&display=swap" rel="stylesheet">    <script src="index.js" defer></script>
     <title>Resume</title>
   </head>
+  
   <body>
     <header class="primary-header">
       <div class="nav-display">
@@ -23,45 +24,39 @@
         </ul>
       </nav>
     </header>
-    <main>
-      <div class="resume">
-          <h1 class="resume-title">Claire Manthey</h1>
-        
-          <img src="images/resume_image.png" alt="profile image" class="profile-image" />
-                      
-          <p class="resume-para self-description"> Web developer based in Chicago, skilled in creating beautiful websites. Using design to support functionality and accessibility. Through designing learning materials for teachers and parents I discovered my passion for design and wanting to make the web a more beautiful and accessible place.</p>
-          
-          <section class="resume-section section-info">
-            <h2 class="resume-subheading"><i class="fa-regular fa-address-card"></i>Contact</h2>
-          
-
-            <article class="contact-info">
-              <p class="resume-para contact-item"><i class="fa-solid fa-compass contact-icon"></i>Chicago,IL</p>
-              <p class="resume-para contact-item"><a href="https://github.com/clairemanthey" class="pointer"><i class="fa-brands fa-github contact-icon"></i>GitHub</a></p>
-              <p class="resume-para contact-item"><a href="https://www.linkedin.com/in/claire-manthey-4389a622/" class="pointer"><i class="fa-brands fa-linkedin contact-icon"></i>LinkedIn</a></p>
-              <p class="resume-para contact-item"><i class="far fa-envelope-open contact-icon fa-xs"></i><span class="contact-item">clairemakeswebsites@gmail.com</span><button id="copy-resume" class="copy-btn"><i class="far fa-copy fa-sm"></i></button></p>
-            </article>
   
-            <article class="resume-skills">
-              <h3 class="resume-heading-3">Skills:</h3>
-              <ul class="resume-list skills-list">
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> LMS</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> HTML</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> CSS</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Javascript</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> React</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Git</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Figma</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Bootstrap</li>
-                <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> MySQL</li>
-              </ul>
-            </article>
-
+    <main class="section">
+      <div class="resume">
+        <h1 class="resume-title">Claire Manthey</h1>
+        <img src="images/resume_image.png" alt="profile image" class="profile-image" />
+        <p class="resume-para self-description"> Web developer based in Chicago, skilled in creating beautiful websites. Using design to support functionality and accessibility. Through designing learning materials for teachers and parents I discovered my passion for design and wanting to make the web a more beautiful and accessible place.</p>
+          
+        <section class="resume-section section-info">
+         <h2 class="resume-subheading"><i class="fa-regular fa-address-card"></i>Contact</h2>
+          <article class="contact-info">
+            <p class="resume-para contact-item"><i class="fa-solid fa-compass contact-icon"></i>Chicago,IL</p>
+            <p class="resume-para contact-item"><a href="https://github.com/clairemanthey" class="pointer"><i class="fa-brands fa-github contact-icon"></i>GitHub</a></p>
+            <p class="resume-para contact-item"><a href="https://www.linkedin.com/in/claire-manthey-4389a622/" class="pointer"><i class="fa-brands fa-linkedin contact-icon"></i>LinkedIn</a></p>
+            <p class="resume-para contact-item"><i class="far fa-envelope-open contact-icon fa-xs"></i><span class="contact-item">clairemakeswebsites@gmail.com</span><button id="copy-resume" class="copy-btn"><i class="far fa-copy fa-sm"></i></button></p>
+          </article>
+  
+          <article class="resume-skills">
+            <h3 class="resume-heading-3">Skills:</h3>
+            <ul class="resume-list skills-list">
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> LMS</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> HTML</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> CSS</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Javascript</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> React</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Git</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Figma</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> Bootstrap</li>
+              <li class="resume-list-item skill-item"><i class="fa-solid fa-code-commit"></i> MySQL</li>
+            </ul>
+          </article>
         </section>
 
         <section class="resume-section section-experience">
-
- 
           <h2 class="resume-subheading">EXPERIENCE</h2>
           <h3 class="resume-heading-experience">Bright Horizons Bernice E Lavin Early Childhood Education Center</h3>
           <p class="resume-para job-title"><i class="fa-regular fa-id-badge"></i> Education Coordinator/Lead, July 2019-July 2020</p>
@@ -102,7 +97,6 @@
             <li class="resume-list-item">Contributed to monthly newsletters</li>
           </ul>
         </section>
-      
 
         <section class="resume-section section-education">
           <article>
@@ -136,59 +130,69 @@
           </article>
         </section>
       </div>    
-    <section class="contact" id="contact">
-      <h2 class="heading-two">Let's work together...</h2>
-      <p>How do you take your coffee?</p>
-      <div class="contact-links">
-        <div class="profile-link">
-          <a href="resume.html">
-            <i class="fa-solid fa-file-code center"></i>
-            <p>Resume</p>
-          </a>
-        </div>
-        <div class="profile-link">
-          <a href="https://github.com/clairemanthey" target="_blank">
-            <i class="fa-brands fa-github"></i>
-            <p>Github</p>
-          </a>
-        </div>
-        <div class="profile-link">
-          <a href="https://twitter.com/claire_makes" target="_blank">
-            <i class="fa-brands fa-twitter"></i>
-            <p>Twitter</p>
-          </a>
-        </div>
-        <div class="profile-link">
-          <a href="https://codepen.io/aglaea" target="_blank">
-            <i class="fa-brands fa-codepen"></i>
-            <p>codepen</p>
-          </a>
-        </div>
-        <div class="profile-link">
-          <a href="https://www.linkedin.com/in/claire-manthey-4389a622/" target="_blank">
-            <i class="fa-brands fa-linkedin"></i>
-            <p>LinkedIn</p>
-          </a>
-        </div>
-        <div class="profile-link">
-          <a href="https://webdesign-adventures.netlify.app/" target="_blank">
-            <i class="fa-brands fa-blogger"></i>
-            <p>Blog</p>
-          </a>
-        </div>
-        <div class="profile-link">
-          <a href="mailto:clairemakes@gmail.com" target="_blank">
-            <i class="fa-solid fa-at"></i>
-          </a>
-          <div class="email-container">
-            <p id="email" class="email"></p>
-            <button id="copy" class="copy-btn"><i class="far fa-copy fa-xl"></i></button>
+      
+      <section class="contact" id="contact">
+        <h2 class="heading-two">Let's work together...</h2>
+        <p>How do you take your coffee?</p>
+        
+        <div class="contact-links">
+          <div class="profile-link">
+            <a href="resume.html">
+              <i class="fa-solid fa-file-code center"></i>
+              <p>Resume</p>
+            </a>
           </div>
+    
+          <div class="profile-link">
+            <a href="https://github.com/clairemanthey" target="_blank">
+              <i class="fa-brands fa-github"></i>
+              <p>Github</p>
+            </a>
+          </div>
+        
+          <div class="profile-link">
+            <a href="https://twitter.com/claire_makes" target="_blank">
+              <i class="fa-brands fa-twitter"></i>
+              <p>Twitter</p>
+            </a>
+          </div>
+        
+          <div class="profile-link">
+            <a href="https://codepen.io/aglaea" target="_blank">
+              <i class="fa-brands fa-codepen"></i>
+              <p>codepen</p>
+            </a>
+          </div>
+        
+          <div class="profile-link">
+            <a href="https://www.linkedin.com/in/claire-manthey-4389a622/" target="_blank">
+              <i class="fa-brands fa-linkedin"></i>
+              <p>LinkedIn</p>
+            </a>
+          </div>
+        
+          <div class="profile-link">
+            <a href="https://webdesign-adventures.netlify.app/" target="_blank">
+              <i class="fa-brands fa-blogger"></i>
+              <p>Blog</p>
+            </a>
+          </div>
+      
+          <div class="profile-link">
+            <a href="mailto:clairemakes@gmail.com" target="_blank">
+              <i class="fa-solid fa-at"></i>
+            </a>
+            <div class="email-container">
+              <p id="email" class="email"></p>
+              <button id="copy" class="copy-btn"><i class="far fa-copy fa-xl"></i></button>
+            </div>
+          </div>
+        
         </div>
-      </div>
-    </section>
+      </section>
 
     </main>
+    
     <footer class="footer">
       <p></p>
       <p>© Claire Manthey </p>
